@@ -1,5 +1,7 @@
 import sofaset from '../assets/sofaset.png';
 
+
+
 const Carousel = () => {
   return (
     <div className="container-fluid py-5 bg-light">
