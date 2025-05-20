@@ -4,6 +4,7 @@ import { createRoot } from 'react-dom/client';
 import Home from './Pages/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
+import './index.css'
 
 
 createRoot(document.getElementById('root')).render(
