@@ -4,12 +4,18 @@ import cors from 'cors';
 const app = express();
 const port = 5000;
 
+
 app.use(express.json());
 app.use(cors());
+app.use('/images', express.static('images'));
+
+
+
+
 const products = [
   {
     id: 1,
-    image: "arm-chair-02.jpg",
+    image: "H:/React/e-commerce/src/assets/arm-chair-02.jpg",
     name: "Arm Chair - Grey",
     price: 129.99,
     rating: 4.2,
