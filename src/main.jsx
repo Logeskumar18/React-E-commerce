@@ -5,18 +5,21 @@ import Home from './Pages/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import './index.css'
+import { CartProvider } from '../src/Components/CartContext'
+import Cart from './Components/Cart';
 
 
 createRoot(document.getElementById('root')).render(
   <>
-   
-  <BrowserRouter>
-  <Navbar />
-    <Routes>
-      <Route path='/' element={<Home/>}/>
-    </Routes>
-  </BrowserRouter>
+    <CartProvider>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/cart' element= {<Cart />} />
+        </Routes>
+      </BrowserRouter>
+    </CartProvider>
 
-  
   </>
 )
