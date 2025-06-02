@@ -8,3 +8,8 @@
   transform: translateX(0);
   opacity: 1;
 }
+.navbar {
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent black */
+  transition: background-color 0.3s ease;
+}

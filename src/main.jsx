@@ -5,7 +5,8 @@ import Home from './Pages/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import './index.css'
-import { CartProvider } from '../src/Components/CartContext'
+import { CartProvider } from './Components/CartContext';
+
 import Cart from './Components/Cart';
 
 
